@@ -1,3 +1,6 @@
+// most of these are just for setup testing purpose
+// delete when necessary
+
 import { createStore } from 'redux';
 import productOnList from './reducer';
 import React from 'react';
