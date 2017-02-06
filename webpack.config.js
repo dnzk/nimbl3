@@ -33,7 +33,6 @@ const common = merge([
       extensions: ['.js', '.jsx']
     }
   },
-  parts.minifyJavascript({ useSourceMap: true }),
   parts.loadImages(),
   parts.loadFonts(),
   parts.loadJavascript({ include: PATHS.app }),
@@ -52,7 +51,8 @@ module.exports = function (env) {
       },
       parts.extractCSS({
         use: ['css-loader', parts.autoprefix(), 'sass-loader']
-      })
+      }),
+      parts.minifyJavascript({ useSourceMap: true }),
     ])
   }
   return merge([
