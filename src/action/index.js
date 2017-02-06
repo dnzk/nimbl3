@@ -98,7 +98,7 @@ const INITIAL_STATE = {
     shippingFee: 200,
     specialDiscount: 400,
     tax: 7,
-    total: 41000.21
+    total: 41000.21,
     products: [
       {
         sku: 'tnso000001',
