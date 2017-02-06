@@ -23,7 +23,7 @@ export function removeProductFromList(sku) {
   };
 }
 
-export function updateProductQty(sku, qty) {
+export function updateProductQty({sku, qty}) {
   return {
     type: UPDATE_QTY_PRODUCT_LIST,
     sku,
@@ -31,7 +31,7 @@ export function updateProductQty(sku, qty) {
   };
 }
 
-export function updateProductDiscount(sku, discount) {
+export function updateProductDiscount({sku, discount}) {
   return {
     type: UPDATE_DISCOUNT_PRODUCT_LIST,
     sku,
@@ -39,7 +39,7 @@ export function updateProductDiscount(sku, discount) {
   };
 }
 
-export function updateProductPrice(sku, price) {
+export function updateProductPrice({sku, price}) {
   return {
     type: UPDATE_PRICE_PRODUCT_LIST,
     sku,
@@ -104,7 +104,7 @@ const INITIAL_STATE = {
         sku: 'tnso000001',
         description: 'Magnetic contactor - 9A (5.5 kW\, 7.5 HP)\, control voltage 230 Vac',
         brand: 'Schneider Electric',
-        listPrice: 880,
+        price: 880,
         discount: 30,
         netPrice: 660,
         qty: 16,
@@ -114,7 +114,7 @@ const INITIAL_STATE = {
         sku: 'tnso000002',
         description: 'Magnetic contactor - 9A (5.5 kW\, 7.5 HP)\, control voltage 230 Vac',
         brand: 'Schneider Electric',
-        listPrice: 880,
+        price: 880,
         discount: 30,
         netPrice: 660,
         qty: 16,
