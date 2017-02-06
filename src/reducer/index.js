@@ -4,11 +4,12 @@ function productOnList(state = [], action) {
   switch (action.type) {
     case ADD_PRODUCT_LIST:
       // if product exists in list, add quantity
-      if (productIsInList(state, action.sku)) {
+      let sku = action.product.sku
+      if (productIsInList(state, sku)) {
         return state.map((prod) => {
-          if (prod.sku === action.sku) {
+          if (prod.sku === sku) {
             return Object.assign({}, prod, {
-              qty: prod.qty + 1
+              qty: prod.qty + 1,
             });
           }
           return prod;
@@ -18,13 +19,14 @@ function productOnList(state = [], action) {
       // else, add product to list
       return [
         ...state,
-        Object.assign({}, action, {
-          qty: 1
+        Object.assign({}, action.product, {
+          qty: 1,
+          discount: 0,
         })
       ];
 
     case REMOVE_PRODUCT_LIST:
-      return state.filter((prod) => prod.sku !== action);
+      return state.filter((prod) => prod.sku !== action.sku);
 
     case UPDATE_QTY_PRODUCT_LIST:
       return state.map((prod) => {
