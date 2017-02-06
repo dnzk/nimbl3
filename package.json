@@ -1,0 +1,46 @@
+{
+  "name": "nimbl3",
+  "version": "1.0.0",
+  "description": "Nimbl3 dashboard",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean:dist; ./node_modules/.bin/webpack --env production",
+    "clean:dist": "rm -rf ./dist/*",
+    "start": "./node_modules/.bin/nodemon --watch webpack.config.js --exec \"./node_modules/.bin/webpack-dev-server --env development\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnzk/nimbl3.git"
+  },
+  "keywords": [],
+  "author": "dnzk <danishkalesaran@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnzk/nimbl3/issues"
+  },
+  "homepage": "https://github.com/dnzk/nimbl3#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0",
+    "webpack-merge": "^2.6.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
