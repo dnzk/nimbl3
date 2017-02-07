@@ -34,6 +34,7 @@ const common = merge([
     }
   },
   parts.loadImages(),
+  parts.loadSprite(),
   parts.loadFonts(),
   parts.loadJavascript({ include: PATHS.app }),
 ]);

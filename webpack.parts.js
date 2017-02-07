@@ -130,3 +130,23 @@ exports.minifyJavascript = function (conf) {
     ]
   }
 };
+
+exports.loadSprite = function () {
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.svg$/,
+          loader: 'svg-sprite-loader',
+          options: {
+            name: '[name]_[hash]'
+          }
+          // loader: 'svg-sprite?' + JSON.stringify({
+          //   name: '[name]_[hash]',
+          //   prefixize: true,
+          // })
+        }
+      ]
+    }
+  }
+};
