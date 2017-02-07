@@ -1,0 +1,40 @@
+.c-sidebar {
+  background-color: #702283;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 246px;
+
+  &__header {
+    height: 69.68px;
+    background-color: #4c1367;
+  }
+
+  &--closed {
+    left: -246px;
+  }
+
+}
+
+.c-sidebar-list {
+
+  &__item {
+    height: 66.87px;
+
+    &:hover {
+      background-color: rgba(76, 19, 103, 0.5);
+      box-shadow: 0 -1px 0 0 #4c1367, 0 1px 0 0 #4c1367;
+    }
+    
+  }
+}
+
+.c-sidebar-link {
+  display: block;
+  height: 100%;
+  color: #d18ee2;
+  text-decoration: none;
+  line-height: 66.87px;
+}
