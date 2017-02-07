@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 
 import './style/main.scss';
 
-import Hello from './component/Hello';
+import App from './component/App';
 
 import { addProductToList, removeProductFromList, updateProductQty, updateProductDiscount, updateProductPrice } from './action';
 
@@ -60,7 +60,8 @@ store.dispatch(updateProductPrice({
   price: 616
 }));
 
-// ReactDOM.render(
-//   <Hello hi="Nimbl3" />,
-//   document.getElementById('app')
-// );
+ReactDOM.render(
+  // <Hello hi="Nimbl3" />,
+  <App />,
+  document.getElementById('app')
+);
