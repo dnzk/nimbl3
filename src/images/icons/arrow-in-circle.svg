@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_pricing_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Styles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_pricing_down">
+            <g id="Group-2">
+                <circle id="Oval-19" fill="#8899AA" cx="16.5" cy="16.5" r="16.5"></circle>
+                <path d="M17.2238923,17.8919321 C17.2342041,17.8787314 17.2383289,20.6111306 17.2486407,20.5979299 L24.4483782,12.1121056 C24.8505406,11.6346817 24.8505406,10.860243 24.4483782,10.3828191 C24.2503906,10.1430072 23.9905318,10 23.7017999,10 L9.30026248,10 C9.00534342,10 8.74342229,10.1518076 8.55574652,10.3872194 C8.14945941,10.860243 8.14945941,11.6346817 8.55162177,12.1121056 L15.7678583,20.6419321 C16.1700206,21.119356 16.8217299,21.119356 17.2238923,20.6419321 L17.2238923,17.8919321 Z" id="Shape" fill="#FFFFFF" transform="translate(16.500257, 15.500000) rotate(-180.000000) translate(-16.500257, -15.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

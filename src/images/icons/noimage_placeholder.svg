@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="222px" height="222px" viewBox="0 0 222 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>F6086375-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.396596859" y="0.312827225" width="221.374346" height="221.374346"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="221.374346" height="221.374346" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="221.374346" height="221.374346" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Product-Info-Edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A-1.0-Shop-User" transform="translate(-795.000000, -1100.000000)">
+            <g id="Group-46-Copy" transform="translate(763.000000, 1100.000000)">
+                <g id="Group-44" transform="translate(0.000000, 0.231279)">
+                    <g id="Group-41-Copy">
+                        <g id="F6086375-01" transform="translate(32.000000, 0.000000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask" stroke="#F1F0F4" mask="url(#mask-2)" stroke-width="4">
+                                <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Group-47" mask="url(#mask-3)">
+                                <g transform="translate(68.000000, 75.000000)">
+                                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="5" fill="#F2F0F4" points="0.798194999 0.130680247 0.798194999 82.6217955 88.5610216 82.6217955 88.5610216 0.130680247"></polygon>
+                                    <path d="M84.0016362,63.4336073 L82.4368365,63.4355464 C82.3795285,63.4384552 77.1246766,63.7206071 72.1505367,60.0797817 C70.3856446,58.7863434 69.1180694,57.2892903 67.8912898,55.8407169 C65.590228,53.1239146 63.2172884,50.3227577 58.2625749,49.8476566 L56.74537,49.7778459 C51.7906566,50.3217881 49.417717,53.1239146 47.1176265,55.8407169 C45.8908468,57.2892903 44.6232716,58.7863434 42.8574083,60.0797817 C37.9405764,63.6760057 32.6080187,63.4394248 32.4292954,63.4306985 L5.3575804,63.4306985 L5.3575804,4.68195432 L84.0016362,4.68195432 L84.0016362,63.4336073 Z" id="Path" stroke="none" fill="#FFFFFF"></path>
+                                    <path d="M28.7363912,37.4044786 C34.2360162,37.4044786 38.7099253,32.9394984 38.7099253,27.4486877 C38.7099253,21.9588467 34.2369876,17.4938665 28.7363912,17.4938665 C23.2367661,17.4938665 18.7638284,21.9588467 18.7638284,27.4486877 C18.7638284,32.9394984 23.2377374,37.4044786 28.7363912,37.4044786 L28.7363912,37.4044786 Z" id="Shape" stroke="#FFFFFF" stroke-width="2" fill="#F2F0F4"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
