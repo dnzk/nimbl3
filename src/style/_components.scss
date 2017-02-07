@@ -1,0 +1,20 @@
+@import "./components/sidebar";
+@import "./components/content-header";
+
+.c-content-body {
+  padding: 20px;
+}
+
+.c-crumbs {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.c-box {
+  background-color: #fff;
+  border: 1px solid rgba(173, 179, 185, 0.51);
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+}

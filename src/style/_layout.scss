@@ -1,0 +1,34 @@
+.l-outermost {
+  width: 100%;
+  height: 100%;
+}
+
+.l-content-container {
+  background-color: #f4f7f8;
+  width: 1024px;
+  height: 100%;
+  // padding-left: 246px;
+}
+
+.l-flex {
+  display: flex;
+  flex-direction: row;
+
+  &--column {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__none {
+    flex: none;
+  }
+
+  &__1 {
+    flex: 1;
+  }
+
+  &__2 {
+    flex: 2;
+  }
+
+}

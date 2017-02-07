@@ -1,12 +1,12 @@
+@import "base";
+@import "mixins";
+@import "layout";
+@import "components";
+@import "text";
+
 @font-face {
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
-}
-
-body {
-  background-color: purple;
-  color: #ccc;
-  font-family: 'Montserrat';
 }

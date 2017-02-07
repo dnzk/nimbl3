@@ -60,7 +60,7 @@ store.dispatch(updateProductPrice({
   price: 616
 }));
 
-ReactDOM.render(
-  <Hello hi="Nimbl3" />,
-  document.getElementById('app')
-);
+// ReactDOM.render(
+//   <Hello hi="Nimbl3" />,
+//   document.getElementById('app')
+// );
