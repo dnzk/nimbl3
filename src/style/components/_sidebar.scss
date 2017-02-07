@@ -22,19 +22,21 @@
 
   &__item {
     height: 66.87px;
+    color: #d18ee2;
 
     &:hover {
       background-color: rgba(76, 19, 103, 0.5);
       box-shadow: 0 -1px 0 0 #4c1367, 0 1px 0 0 #4c1367;
+      color: #fff;
     }
-    
+
   }
 }
 
 .c-sidebar-link {
   display: block;
   height: 100%;
-  color: #d18ee2;
+  color: inherit;
   text-decoration: none;
   line-height: 66.87px;
 }
