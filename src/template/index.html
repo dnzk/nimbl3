@@ -5,8 +5,8 @@
     <title>Nimbl3</title>
   </head>
   <body>
-    <div id="app">
-      <div class="c-sidebar">
+    <div id="app" class="l-outermost l-flex">
+      <div class="l-flex__none c-sidebar">
         <header class="c-sidebar__header">
         </header>
         <nav class="c-sidebar__navigation">
@@ -44,9 +44,124 @@
           </ul>
         </nav>
       </div>
-      <section class="c-body-container">
-        <header class="">
+      <section class="l-flex__1 l-content-container">
+        <header class="c-content-header l-flex">
+          <input type="text" placeholder="Search here" class="l-flex__1" />
+          <div class="c-content-header__user-info c-dropdown l-flex__none l-flex l-flex--column">
+            <p>Hello, Somchai</p>
+            <p>TWIN TYPES CORPORATION</p>
+            <div class="c-dropdown__menu">
+              <!-- menu be here -->
+            </div>
+          </div>
         </header>
+        <section class="c-content-body c-order">
+          <div class="c-crumbs">
+            <span class="">Orders /</span>
+            <span class="">TN SO 000015</span>
+          </div>
+
+          <div class="l-flex">
+            <div class="l-flex l-flex__2 c-box">
+              <div>
+                <p>CPF Saraburi</p>
+                <p>Highway 2, kaeng Khoi Saraburi Thailand</p>
+                <p>+66 087 348 79 34</p>
+              </div>
+              <div>
+                <label for="type">Type</label>
+                <div class="c-dropdown">
+                </div>
+              </div>
+              <div>
+                <label for="owner">Owned By</label>
+                <div class="c-dropdown">
+                </div>
+              </div>
+              <div>
+                <label for="status">Status</label>
+                <div class="c-dropdown">
+                </div>
+              </div>
+            </div>
+            <div class="l-flex__1">
+              <a href="#">
+                Back
+              </a>
+              <a href="#">
+                Update Order
+              </a>
+            </div>
+          </div>
+
+          <div class="c-box">
+            <input type="text" />
+          </div>
+
+          <table class="c-box">
+            <tr class="">
+              <th>
+                SKU
+              </th>
+              <th>
+                DESCRIPTION
+              </th>
+              <th>
+                BRAND
+              </th>
+              <th>
+                LIST PRICE
+              </th>
+              <th>
+                DISCOUNT
+              </th>
+              <th>
+                NET PRICE
+              </th>
+              <th>
+                QTY
+              </th>
+              <th>
+                TOTAL
+              </th>
+            </tr>
+
+            <tr class="">
+              <td>
+                TN SO 000015
+              </td>
+              <td>
+                Magnetic contactor - 9A (5.5 kW\, 7.5 HP)\, control voltage 250 Vac
+              </td>
+              <td>
+                Schneider Electric
+              </td>
+              <td>
+                THB 880
+              </td>
+              <td>
+                30%
+              </td>
+              <td>
+                THB 660
+              </td>
+              <td>
+                16
+              </td>
+              <td>
+                THB 50000
+              </td>
+              <td>
+                Remove item
+              </td>
+            </tr>
+          </table>
+
+          <div class="c-box">
+            When you enter into any new are of science, you almost always find yourself with a baffling new language of technical terms to learn before
+          </div>
+
+        </section>
       </section>
     </div>
   </body>
