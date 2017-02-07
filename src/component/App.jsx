@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Body from './Body';
 import Sidebar from './Sidebar';
 import sidebarMenu from '../store/static';
 
@@ -13,7 +14,10 @@ class App extends React.Component {
   render() {
 
     return (
-      <Sidebar menu={ this.state.sidebarMenu } />
+      <div className="l-outermost l-flex">
+        <Sidebar menu={ this.state.sidebarMenu } />
+        <Body />
+      </div>
     )
   }
 }
