@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Body from './Body';
 import Sidebar from './Sidebar';
@@ -8,18 +9,29 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      sidebarMenu: sidebarMenu
+      sidebarMenu: sidebarMenu,
     }
   }
   render() {
-
     return (
       <div className="l-outermost l-flex">
         <Sidebar menu={ this.state.sidebarMenu } />
-        <Body />
+        <Body order={ this.props.order } />
       </div>
     )
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    order: state.order
+  };
+}
+
+const AppContainer = connect(mapStateToProps)(App);
+
+export default AppContainer;
+
+// export const AppContainer = connect(mapStateToProps)(App);
+
+// export default App;

@@ -30,6 +30,8 @@ export const INITIAL_STATE = {
     },
   ],
   order: {
+    user: 'Somchai',
+    company: 'Twin Types Corporation',
     name: 'tn so 000015',
     address1: 'CPF Saraburi',
     address2: 'Highway 2, Kaeng Khoi Saraburi Thailand',

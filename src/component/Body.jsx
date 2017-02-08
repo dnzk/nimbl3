@@ -1,22 +1,22 @@
 import React from 'react';
 
 import SearchBox from './SearchBox';
+import UserBox from './UserBox';
+import DataGrid from './DataGrid';
 
 class Body extends React.Component {
   constructor() {
     super();
+  }
+  componentDidMount() {
+    console.log(this.props.order);
   }
   render() {
     return (
       <section className="l-flex__1 l-content-container">
         <header className="c-content-header l-flex">
           <input type="text" placeholder="Search here" className="l-flex__1" />
-          <div className="c-content-header__user-info c-dropdown l-flex__none l-flex l-flex--column">
-            <p>Hello, Somchai</p>
-            <p>TWIN TYPES CORPORATION</p>
-            <div className="c-dropdown__menu">
-            </div>
-          </div>
+          <UserBox user={this.props.order.user} company={this.props.order.company} />
         </header>
         <section className="c-content-body c-order">
           <div className="c-crumbs">
@@ -59,68 +59,7 @@ class Body extends React.Component {
 
           <SearchBox />
 
-          <table className="c-box">
-            <thead>
-              <tr className="">
-                <th>
-                  SKU
-                </th>
-                <th>
-                  DESCRIPTION
-                </th>
-                <th>
-                  BRAND
-                </th>
-                <th>
-                  LIST PRICE
-                </th>
-                <th>
-                  DISCOUNT
-                </th>
-                <th>
-                  NET PRICE
-                </th>
-                <th>
-                  QTY
-                </th>
-                <th>
-                  TOTAL
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr className="">
-                <td>
-                  TN SO 000015
-                </td>
-                <td>
-                  Magnetic contactor - 9A (5.5 kW\, 7.5 HP)\, control voltage 250 Vac
-                </td>
-                <td>
-                  Schneider Electric
-                </td>
-                <td>
-                  THB 880
-                </td>
-                <td>
-                  30%
-                </td>
-                <td>
-                  THB 660
-                </td>
-                <td>
-                  16
-                </td>
-                <td>
-                  THB 50000
-                </td>
-                <td>
-                  Remove item
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <DataGrid items={ this.props.order.products } />
 
           <div className="c-box">
             When you enter into any new are of science, you almost always find yourself with a baffling new language of technical terms to learn before
