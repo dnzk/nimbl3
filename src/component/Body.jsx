@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SearchBox from './SearchBox';
+
 class Body extends React.Component {
   constructor() {
     super();
@@ -55,9 +57,7 @@ class Body extends React.Component {
             </div>
           </div>
 
-          <div className="c-box">
-            <input type="text" />
-          </div>
+          <SearchBox />
 
           <table className="c-box">
             <thead>
