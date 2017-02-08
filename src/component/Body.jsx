@@ -3,6 +3,8 @@ import React from 'react';
 import SearchBox from './SearchBox';
 import UserBox from './UserBox';
 import DataGrid from './DataGrid';
+import Crumbs from './Crumbs';
+import OrderSummary from './OrderSummary';
 
 class Body extends React.Component {
   constructor() {
@@ -23,43 +25,10 @@ class Body extends React.Component {
           <UserBox user={this.props.order.user} company={this.props.order.company} />
         </header>
         <section className="c-content-body c-order">
-          <div className="c-crumbs">
-            <span className="">Orders /</span>
-            <span className="">TN SO 000015</span>
-          </div>
 
-          <div className="l-flex">
-            <div className="l-flex l-flex__2 c-box">
-              <div>
-                <p>CPF Saraburi</p>
-                <p>Highway 2, kaeng Khoi Saraburi Thailand</p>
-                <p>+66 087 348 79 34</p>
-              </div>
-              <div>
-                <label htmlFor="type">Type</label>
-                <div className="c-dropdown">
-                </div>
-              </div>
-              <div>
-                <label htmlFor="owner">Owned By</label>
-                <div className="c-dropdown">
-                </div>
-              </div>
-              <div>
-                <label htmlFor="status">Status</label>
-                <div className="c-dropdown">
-                </div>
-              </div>
-            </div>
-            <div className="l-flex__1">
-              <a href="#">
-                Back
-              </a>
-              <a href="#">
-                Update Order
-              </a>
-            </div>
-          </div>
+          <Crumbs currentLocation={'Orders'} currentItemId={this.props.order.id} />
+
+          <OrderSummary address1={ this.props.order.address1 } address2={ this.props.order.address2 } number={ this.props.order.number } />
 
           <SearchBox products={this.props.filteredProducts} pickProduct={this.props.actions.onProductClick} filterProducts={this.filterProducts.bind(this)} />
 

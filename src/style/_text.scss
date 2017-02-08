@@ -1,0 +1,37 @@
+$text-color-1: #8899AA;
+$text-color-2: #6C5E73;
+$text-color-3: #626272;
+$text-color-4: #64707C;
+$text-color-5: #FFFFFF;
+$text-color-6: #CD171A;
+$text-color-7: #DF542A;
+
+.t {
+  &--center {
+    text-align: center;
+  }
+
+  &--c {
+    &-1 {
+      color: $text-color-1;
+    }
+    &-2 {
+      color: $text-color-2;
+    }
+    &-3 {
+      color: $text-color-3;
+    }
+    &-4 {
+      color: $text-color-4;
+    }
+    &-5 {
+      color: $text-color-5;
+    }
+    &-6 {
+      color: $text-color-6;
+    }
+    &-7 {
+      color: $text-color-7;
+    }
+  }
+}

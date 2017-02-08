@@ -14,6 +14,10 @@
   display: flex;
   flex-direction: row;
 
+  &--spread {
+    justify-content: space-around;
+  }
+
   &--column {
     flex-direction: column;
     justify-content: center;
