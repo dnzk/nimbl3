@@ -28,10 +28,10 @@ const OrderSummary = (props) => (
       </div>
     </div>
     <div className="l-flex__1 l-flex l-flex--spread">
-      <a href="#" className="c-button l-flex__align">
+      <a href="#" className="c-button c-button--large l-flex__align">
         Back
       </a>
-      <a href="#" className="c-button c-button--grey l-flex__align">
+      <a href="#" className="c-button c-button--large c-button--grey l-flex__align">
         Update Order
       </a>
     </div>
