@@ -7,9 +7,19 @@ import DataGrid from './DataGrid';
 class Body extends React.Component {
   constructor() {
     super();
+    this.state = {
+      existingProducts: [],
+      filteredProducts: []
+    }
+  }
+  displayProductSearch(event) {
+    // this.state.filteredProducts = ['123']
+    // console.log(this.state.filteredProducts);
+    // console.log(this.state.existingProducts);
   }
   componentDidMount() {
-    console.log(this.props.order);
+    console.log(this.props);
+    // this.state.existingProducts = this.state.existingProducts.concat(this.props.products);
   }
   render() {
     return (
@@ -57,7 +67,7 @@ class Body extends React.Component {
             </div>
           </div>
 
-          <SearchBox />
+          <SearchBox displayProductSearch={this.displayProductSearch.bind(this)} products={this.props.products} pickProduct={this.props.actions.onProductClick} />
 
           <DataGrid items={ this.props.order.products } />
 

@@ -2,11 +2,13 @@ import { ADD_PRODUCT_LIST, REMOVE_PRODUCT_LIST, UPDATE_QTY_PRODUCT_LIST, UPDATE_
 
 function productOnList(state = {}, action) {
   let productList = state.order.products;
+  let productStock = state.products;
 
   switch (action.type) {
     case ADD_PRODUCT_LIST:
       // if product exists in list, add quantity
-      let sku = action.product.sku
+      let sku = action.sku;
+      // let sku = action.product.sku
       if (productIsInList(productList, sku)) {
         return Object.assign({}, state, {
           order: {
@@ -23,11 +25,12 @@ function productOnList(state = {}, action) {
       }
 
       // else, add product to list
+      let productToAdd = productStock.filter((prod) => prod.sku === action.sku)[0];
       return Object.assign({}, state, {
         order: {
           products: [
             ...productList,
-            Object.assign({}, action.product, {
+            Object.assign({}, productToAdd, {
               qty: 1,
               discount: 0
             })

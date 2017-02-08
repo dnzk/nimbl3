@@ -9,10 +9,10 @@ export const SET_MODAL_VISIBILITY = 'SET_MODAL_VISIBILITY';
 
 // action creators
 
-export function addProductToList(product) {
+export function addProductToList(sku) {
   return {
     type: ADD_PRODUCT_LIST,
-    product,
+    sku
   };
 }
 
