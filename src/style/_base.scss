@@ -28,3 +28,22 @@ a {
 input {
   border: none;
 }
+
+table {
+
+  tr {
+    font-size: 10px;
+    height: 50px;
+
+    th, td {
+      min-width: 100px;
+      text-align: left;
+    }
+
+    td {
+      font-size: 12px;
+    }
+
+  }
+
+}
