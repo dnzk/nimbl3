@@ -1,4 +1,4 @@
-import { ADD_PRODUCT_LIST, REMOVE_PRODUCT_LIST, UPDATE_QTY_PRODUCT_LIST, UPDATE_DISCOUNT_PRODUCT_LIST, UPDATE_PRICE_PRODUCT_LIST, SET_MODAL_VISIBILITY } from '../action';
+import { ADD_PRODUCT_LIST, REMOVE_PRODUCT_LIST, UPDATE_QTY_PRODUCT_LIST, UPDATE_DISCOUNT_PRODUCT_LIST, UPDATE_PRICE_PRODUCT_LIST, SET_MODAL_VISIBILITY, GET_FILTERED_PRODUCTS } from '../action';
 
 function productOnList(state = {}, action) {
   let productList = state.order.products;
@@ -85,6 +85,16 @@ function productOnList(state = {}, action) {
             return prod;
           })
         }
+      });
+
+    case GET_FILTERED_PRODUCTS:
+      let filtered = [];
+      if (action.sku) {
+        filtered = productStock.filter((prod) => prod.sku.toLowerCase().indexOf(action.sku) > -1);
+      }
+      
+      return Object.assign({}, state, {
+        filteredProducts: filtered
       });
 
     default:

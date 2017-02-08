@@ -35,7 +35,7 @@ class SearchBox extends React.Component {
 
     return (
       <div className="c-box">
-        <input type="text" onChange={this.props.displayProductSearch} />
+        <input type="text" onChange={this.props.filterProducts.bind(this)} />
         <div className="">
           { products }
         </div>

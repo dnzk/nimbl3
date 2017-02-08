@@ -12,14 +12,21 @@ class Body extends React.Component {
       filteredProducts: []
     }
   }
-  displayProductSearch(event) {
-    // this.state.filteredProducts = ['123']
-    // console.log(this.state.filteredProducts);
-    // console.log(this.state.existingProducts);
-  }
+  // displayProductSearch(event) {
+  //   // console.log(event.target.value);
+  //   let filtered = this.props.products.filter((p) => p.sku.toLowerCase().indexOf(event.target.value) > -1);
+  //   console.log(filtered);
+  //   // this.state.filteredProducts = ['123']
+  //   // console.log(this.state.filteredProducts);
+  //   // console.log(this.state.existingProducts);
+  // }
   componentDidMount() {
-    console.log(this.props);
+    // console.log(this.props);
     // this.state.existingProducts = this.state.existingProducts.concat(this.props.products);
+  }
+  filterProducts(event) {
+    // console.log(event.target.value);
+    this.props.actions.filterProductStock(event.target.value);
   }
   render() {
     return (
@@ -67,7 +74,7 @@ class Body extends React.Component {
             </div>
           </div>
 
-          <SearchBox displayProductSearch={this.displayProductSearch.bind(this)} products={this.props.products} pickProduct={this.props.actions.onProductClick} />
+          <SearchBox products={this.props.filteredProducts} pickProduct={this.props.actions.onProductClick} filterProducts={this.filterProducts.bind(this)} />
 
           <DataGrid items={ this.props.order.products } />
 

@@ -3,6 +3,7 @@ export const INITIAL_STATE = {
   ui: {
     modal: false,
   },
+  filteredProducts: [],
   products: [
     {
       sku: 'tnso000001',

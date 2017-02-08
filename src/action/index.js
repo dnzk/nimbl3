@@ -6,6 +6,7 @@ export const UPDATE_QTY_PRODUCT_LIST = 'UPDATE_QTY_PRODUCT_LIST';
 export const UPDATE_DISCOUNT_PRODUCT_LIST = 'UPDATE_DISCOUNT_PRODUCT_LIST';
 export const UPDATE_PRICE_PRODUCT_LIST = 'UPDATE_PRICE_PRODUCT_LIST';
 export const SET_MODAL_VISIBILITY = 'SET_MODAL_VISIBILITY';
+export const GET_FILTERED_PRODUCTS = 'GET_FILTERED_PRODUCTS';
 
 // action creators
 
@@ -45,6 +46,13 @@ export function updateProductPrice({sku, price}) {
     sku,
     price,
   };
+}
+
+export function getFilteredProducts(sku) {
+  return {
+    type: GET_FILTERED_PRODUCTS,
+    sku
+  }
 }
 
 export function setModalVisibility(visible) {
