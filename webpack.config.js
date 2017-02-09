@@ -60,7 +60,8 @@ module.exports = function (env) {
     common,
     parts.devServer({
       host: process.env.HOST,
-      port: process.env.PORT
+      port: process.env.PORT,
+      publicPath: '/'
     }),
     parts.loadCSS()
   ]);
