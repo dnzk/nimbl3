@@ -10,7 +10,7 @@ const DataGridRow = (props) => (
     <td>{ props.item.netPrice }</td>
     <td>{ props.item.qty }</td>
     <td>{ props.item.total }</td>
-    <td>remove item</td>
+    <td><a href="#">remove item</a></td>
   </tr>
 )
 
@@ -24,9 +24,9 @@ class DataGrid extends React.Component {
     });
 
     return (
-      <table className="c-box">
+      <table className="c-box c-datagrid">
         <thead>
-          <tr className="">
+          <tr className="t--c-3">
             <th>
               SKU
             </th>

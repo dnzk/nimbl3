@@ -34,11 +34,12 @@ class Body extends React.Component {
 
           <DataGrid items={ this.props.order.products } />
 
+          <p>Remarks</p>
           <div className="c-box">
             When you enter into any new are of science, you almost always find yourself with a baffling new language of technical terms to learn before
           </div>
 
-          <div className="c-box">
+          <div className="c-box c-order-summary">
             Things be here
           </div>
 

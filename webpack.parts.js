@@ -91,7 +91,10 @@ exports.loadFonts = function () {
         {
           test: /\.(ttf|otf)$/,
           use: {
-            loader: 'file-loader'
+            loader: 'url-loader',
+            options: {
+              name: './fonts/[name].[ext]'
+            }
           }
         }
       ]

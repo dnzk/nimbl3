@@ -23,6 +23,14 @@
   border-radius: 3px;
   margin-top: 10px;
   padding: 10px;
+
+  &--no-gap {
+    margin: 0;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 }
 
 .c-dropdown {
@@ -31,16 +39,60 @@
 }
 
 .c-button {
-  width: 140px;
-  height: 44px;
   border-radius: 5px;
   display: block;
   text-align: center;
-  line-height: 44px;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--large {
+    font-size: 14px;
+    width: 140px;
+    height: 44px;
+  }
 
   &--grey {
     background-color: #8899AA;
     color: #FFFFFF;
+    border: 1px solid #8899AA;
   }
+}
+
+.c-search-box {
+  position: relative;
+  height: 50px;
+
+  &__result-box {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+.c-input {
+
+  &--bordered {
+    border-radius: 3px;
+    border: 1px solid #8899AA;
+  }
+
+  &--small {
+    width: 34px;
+    height: 30px;
+    text-align: center;
+  }
+
+}
+
+.c-order-summary {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 292px;
+  height: 252px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.12);
 }
