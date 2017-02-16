@@ -13,7 +13,8 @@
   }
 
   &--closed {
-    left: -246px;
+    // left: -246px;
+    width: 0;
   }
 
 }

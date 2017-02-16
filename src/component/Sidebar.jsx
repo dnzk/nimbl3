@@ -24,8 +24,14 @@ class Sidebar extends React.Component {
       return <SidebarLink menu={m} key={k} />
     });
 
+    let cls = `l-flex__none c-sidebar`;
+
+    if (!this.props.opened) {
+      cls = `${cls} c-sidebar--closed`;
+    }
+
     return (
-      <div className="l-flex__none c-sidebar">
+      <div className={cls}>
         <header className="c-sidebar__header">
         </header>
         <nav className="c-sidebar__navigation">

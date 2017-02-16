@@ -11,12 +11,18 @@ class App extends React.Component {
     super();
     this.state = {
       sidebarMenu: sidebarMenu,
+      sidebarOpened: true
     }
+  }
+  toggleSidebar() {
+    this.setState({
+      sidebarOpened: !this.state.sidebarOpened
+    })
   }
   render() {
     return (
       <div className="l-outermost l-flex">
-        <Sidebar menu={ this.state.sidebarMenu } />
+        <Sidebar menu={ this.state.sidebarMenu } opened={ this.state.sidebarOpened } toggleSidebar={ this.toggleSidebar.bind(this) } />
         <Body order={ this.props.order } products={ this.props.products } actions={ this.props.actions } filteredProducts={ this.props.filteredProducts } />
       </div>
     )
@@ -25,10 +31,6 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
   return state;
-  // return {
-  //   order: state.order,
-  //   products: state.products,
-  // };
 }
 
 function mapDispatchToProps(dispatch) {
